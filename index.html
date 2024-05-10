@@ -1,0 +1,940 @@
+<html>
+  <head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: cursive;
+      }
+      
+      body{
+        background-image: url(https://64.media.tumblr.com/855fedadab52784e5d4d5cba031cd4c9/1c87a94a415cbf3a-3c/s1280x720/dc5c58b3fb882ab659a127f4d2a1a787b35eb71b.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      
+      header{
+        text-align: center;
+        color:  mediumvioletred;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        background: pink;
+        width: 100%;
+        margin: auto;
+        border-radius: 0 0 20px 20px;
+        text-shadow:1px 1px 20px #fff, 1px 1px 10px #ccc;
+      }
+      
+      header .logo{
+        background: violet;
+        border-radius: 15px;
+      }
+      
+      button{
+        cursor: pointer;
+        width: 115;
+        height: 30;
+        background: none;
+        border: 1px solid black;
+        color: purple;
+        font-weight: 450;
+        margin-top: 5px;
+        margin-left: 10px;
+      }
+      button:hover{
+        box-shadow: 1px 1px 2px;
+      }
+      .btn{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      
+      #position{
+         display: none;
+      }
+      #position img{
+         cursor: pointer;
+      }
+      .members{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+      
+      #personal{
+        width: 80%;
+        margin: auto;
+        display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 30px;
+      }
+      
+      img{
+        margin-top: 30px;
+        float: left;
+      }
+      .text-box {
+        width:70%;
+      }
+      
+      .text-box p{
+        flex-wrap: wrap;
+        font-size: 25px;
+        color: deeppink;
+        margin-top: 40px;
+        font-weight: bold;
+      }
+      
+      .text-box1 p{
+        flex-wrap: wrap;
+        font-size: 25px;
+        color: white;
+        margin-top: 40px;
+        font-weight: bold;
+      }
+      .text-box1 {
+        width: 90%;
+      }
+      
+      #image-popup{
+        display: none;
+        position: fixed;
+        background: rgba(0,0,0,.4);
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+      }
+      
+      .image{
+        background: white;
+        padding: 2px;
+        
+      }
+      
+      #info{
+        color: white;
+      }
+      
+      .image img{
+        margin-right: 20px;
+      }
+      .title{
+        cursor: pointer;
+        width: 360;
+        margin: auto;
+      }
+      .title:hover{
+        text-shadow:1px 1px 20px #fff, 1px 1px 10px red;
+      }
+      
+      .line {
+        height: 5px;
+        background-color: lightpink;
+        margin-top: 20px;
+        width: 120%;
+      }
+      
+      span{
+        font-size: 100px;
+        position: absolute;
+        top: -40;
+        right: 40;
+        cursor: pointer;
+        color: pink;
+      }
+      #home{
+        width: 70%;
+        margin: auto;
+        display: block;
+      }
+      #home .text-box{
+        width: 80%;
+        margin: auto;
+      }
+     @media screen and (max-width: 1024px) {
+        img {
+          width: 150;
+          height: 200;
+        }
+         #mai{
+            width: 130;
+            height: 190;
+          }
+          #home .text-box {
+            width: 100%;
+            
+          }
+           #home .text-box p{
+             font-size: 20px;
+           }
+           #home .break{
+             height: 10%;
+           }
+           
+          .image img{
+             width: 350;
+             height: 400;
+          }
+     }
+     
+     .break{
+        height: 30%;
+     }
+     .text-box1 p{
+       font-size: 40px;
+     }
+    </style>
+  </head>
+  <body id="size">
+    <header>
+      <div class="logo">
+        <div class="title" onclick="home()">
+      <h1>CRUSH PARTYLIST</h1>
+      </div>
+      </div>
+    </header>
+    <div class="btn">
+        <button onclick="ClickPos()">position</button>
+        <button onclick="ClickPer()">personal/motto</button>
+        <button>cresidentials</button>
+    </div>
+    
+    <div id="home">
+        <h1 style="font-size: 40px; color: rebeccapurple; text-align: center;">Capture Regrowth to Uplift Security in Nature's Health</h1>
+        <img id="mai" src="/images/31927259-7b74-4fe3-a537-e301fc80fa44.jpeg" width="400" height="450" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px; float: right;">
+        <div class="text-box">
+          <p>#MasaganangKalikasan</p>
+          <p>#handogangkaginhawa</p>
+          <p>#CrushNgBayan</p>
+          <p>#Savetheplanet</p>
+          <p>#KalinisanParaSaAtingPaaralan</p>
+          <div class="break"></div>
+          <div class="paragraph">
+            <h5 style="font-size:30px; color:darkviolet">Crush partylist here there and everywhere, to help pulonians,to make great<br> environment and to save the earth <br>#crush_partylist <br>#crushngbayan <br>#voteus <br>#votemevoteusvotecrushpartylist</h5>
+          </div>
+        </div>
+    </div>
+    <div id="position">
+    <center><h1 style="color: blueviolet;">POSITION MEMBERS</h1>
+    <div class="members">
+      <img onclick="pres()" src="/images/0f7ac6cf-2f3c-4d38-87a2-1d41331f6136.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="vpres()" src="/images/4731593c-7d52-495c-862b-7d17abc9740b.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="sec()" src="/images/6b4b6997-cbe8-412f-b69b-021b30479b1f.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="tres()" src="/images/1d99352e-89ee-4d19-9c88-1dc45e2eaf96.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="aud()" src="/images/c22840bd-93e5-4149-9ad6-4f9dd193e36f.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="pio1()" src="/images/6ac49a23-74ac-407a-b654-39cd17574ce1.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="pio2()" src="/images/cdaba914-0c19-453b-874d-66104d805b15.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="po1()" src="/images/da51ea5f-e760-41ac-bac0-b7b927a3c6ca.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="po2()" src="/images/561fa41d-8981-4959-8731-ebd23a44f4ae.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="g8repre1()" src="/images/035811b6-e585-498e-8f5b-88d469cb9662.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="g8repre2()" src="/images/f7fdaf68-4b98-4267-879d-bea7aa07c52b.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="g9repre1()" src="/images/0ed75fab-9cc7-402a-9077-9e545528cf6f.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="g9repre2()" src="/images/391f86a8-9b7b-48c1-8696-0d0553078001.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="g10repre2()" src="/images/ffe0e3fc-709b-43bc-a44f-1b6a4cc5e6dd.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <img onclick="g10repre1()" src="/images/70de6dce-eb8b-4bb1-b68a-6d116fcbabf6.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+    </div>
+    </div>
+    <div id="personal">
+      <img src="/images/0f7ac6cf-2f3c-4d38-87a2-1d41331f6136.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+      <p>MOTTO: study nature,love the nature,and stay close to the nature it will never disappoint you.
+         <br><br>CONTACTS: <br>Fb:Redge Marion Arroyo<br>
+                   Ig:redge_0110<br>email:mareddesepeda@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/4731593c-7d52-495c-862b-7d17abc9740b.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+       <p>MOTTO: Find Solace in the embrace of Nature, it's timeless rhythms nurture the soul.<br><br>CONTACTS: <br> Fb:Shanen Brocal<br>Ig:@ushe_er_name_<br>email:odyshanen@gmail.com</p>
+       </div>
+       <div class="line"></div>
+      <img src="/images/6b4b6997-cbe8-412f-b69b-021b30479b1f.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: A negative mind will never give you a positive life.<br><br>CONTACTS:<br> Fb:Cassandra Ashira<br>ig:laizaxzxa<br>email:cassandrasaludo12@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/1d99352e-89ee-4d19-9c88-1dc45e2eaf96.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: If you never bleed, you're never gonna grow.<br><br>CONTACTS: <br>Fb:JM Dalanon/jiemlark 
+<br>ig:larkjiem <br>email:dalanonjohnmarc184@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/c22840bd-93e5-4149-9ad6-4f9dd193e36f.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: Failure instills courage.<br><br>CONTACTS: <br>Fb:Felicity Reyes 
+<br>Ig:z.shionnn<br>Gmail:rzoe0730@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/6ac49a23-74ac-407a-b654-39cd17574ce1.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>SALES: Live for who you are, be what you want, learn how you feel, and keep on the ground.<br><br>CONTACTS: <br>Fb: Headi Dynielle/Headi Sales<br>Ig: headidynielle0 <br>email:headidyniellesales@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/cdaba914-0c19-453b-874d-66104d805b15.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: Live your life to the fullest.<br><br>CONTACTS: <br>Fb: Nerienel Pacleb<br>Ig: nl_riecheese<br>Email: nerienelpacleb43@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/da51ea5f-e760-41ac-bac0-b7b927a3c6ca.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: Sincerity comes through the mind and reality varies the heart, serving nature is a must, maintaining cleanliness is not lost.<br><br>CONTACTS: <br>Fb : Lourizze Mherieleynn B. Enriquez <br>IG : youfoundlou<br>email:mherieleynnlou@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/561fa41d-8981-4959-8731-ebd23a44f4ae.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: Let's clean, save, and conserve the enviornment for the next generations to come.<br><br>CONTACTS: <br>fb: Audrey Claire Ong Bartolata<br>ig:aud.number<br>gmail: audrxy.cl.aire@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/035811b6-e585-498e-8f5b-88d469cb9662.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: Kalinisan para sa Kalikasan.<br><br>CONTACTS: <br>Fb: Sophia Marie Augusto <br>ig: sp_piyay<br>gmail: sophiaaugusto05@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/f7fdaf68-4b98-4267-879d-bea7aa07c52b.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: If you want something done, do it yourself.<br><br>CONTACTS: <br>Fb: Ahl Vinrod Rebutiaco<br>Ig: ambinrodlolz<br>Email: ahlvinrodrebutiaco@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/0ed75fab-9cc7-402a-9077-9e545528cf6f.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: Find Solace in the embrace of Nature, it's timeless rhythms nurture the soul.<br><br>CONTACTS: <br>Fb: Alexandrea <br>IG: lxieann <br>email: alexandreamoniqueang@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/391f86a8-9b7b-48c1-8696-0d0553078001.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: Live the life you want to be, not the life others want to see.<br><br>CONTACTS: <br>Fb:Junielyn Celis<br>Ig: ambinrodlolz<br>email:junielyncelis123@gmail</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/ffe0e3fc-709b-43bc-a44f-1b6a4cc5e6dd.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: Never too small to make a new difference, so let's make a bigther nature to make a better future.<br><br>CONTACTS:<br>FB: Krisha Mae Bilog<br>ig: rye.larkin<br>bilogkrishamae@gmail.com</p>
+      </div>
+      <div class="line"></div>
+      <img src="/images/70de6dce-eb8b-4bb1-b68a-6d116fcbabf6.jpeg" width="240" height="290" style="border-radius: 15px 15px 0 0; box-shadow: 0px 1px 5px 2px">
+      <div class="text-box">
+        <p>MOTTO: You don't have to be great to start, but you have to start to be great.<br><br>CONTACTS: <br>Fb:James pampang millan<br>Ig:maria546marie<br>Email:millanjames38@gmail.com</p>
+      </div>
+    </div>
+    
+    <div id="image-popup">
+       <div id="Arroyo">
+         <span onclick="back()" id="exit">&times;</span>
+         <h1 style="color: white; text-align: center;">ARROYO</h1>
+         <div class="image">
+           <img src="/images/0f7ac6cf-2f3c-4d38-87a2-1d41331f6136.jpeg" width="400" height="450"></img>
+         </div>
+          <div class="text-box1">
+            <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community.
+         
+              Hi, I'm REDGE MARION ARROYO from 9-tanguile running for the position of PRESIDENT under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+         
+              C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+            </p>
+          </div>
+        </div>
+         <div id="Brocal">
+           <span onclick="back()" id="exit">&times;</span>
+           <h1 style="color: white; text-align: center;">BROCAL</h1>
+           <div class="image">
+             <img src="/images/4731593c-7d52-495c-862b-7d17abc9740b.jpeg" width="400" height="450"></img>
+           </div>
+           <div class="text-box1">
+             <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Shanen Audrey O. Brocal from 9-DAPDAP running for the position of Vice President (V.P) under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+             </p>
+           </div>
+          </div>
+<div id="Saludo">
+  <span onclick="back()" id="exit">&times;</span>
+  <h1 style="color: white; text-align: center;">SALUDO</h1>
+  <div class="image">
+    <img src="/images/dfd3db6f-3845-45ea-af92-a81f8a970c42.jpeg" width="400" height="450"></img>
+  </div>
+  <div class="text-box1">
+    <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community.
+
+Hi, I'm Cassandra Ashira Saludo from 9-Dapdap running for the position of Secretary under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+    </p>
+  </div>
+  </div>
+  <div id="Dalanon">
+    <span onclick="back()" id="exit">&times;</span>
+    <h1 style="color: white; text-align: center;">DALANON</h1>
+    <div class="image">
+      <img src="/images/1d99352e-89ee-4d19-9c88-1dc45e2eaf96.jpeg" width="400" height="450"></img>
+    </div>
+    <div class="text-box1">
+      <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community.
+  
+        Hi, I'm John Marc Dalanon from 9-Dalhia running for the position of Treasurer under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+  
+        C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+      </p>
+    </div>
+  </div>
+  <div id="Reyes">
+    <span onclick="back()" id="exit">&times;</span>
+    <h1 style="color: white; text-align: center;">REYES</h1>
+    <div class="image">
+      <img src="/images/c22840bd-93e5-4149-9ad6-4f9dd193e36f.jpeg" width="400" height="450"></img>
+    </div>
+    <div class="text-box1">
+      <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Felicity Zoe Reyes from 9- ALMACIGA running for the position of Auditor under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+      </p>
+    </div>
+  </div>
+  <div id="Sales">
+    <span onclick="back()" id="exit">&times;</span>
+    <h1 style="color: white; text-align: center;">SALES</h1>
+    <div class="image">
+      <img src="/images/6ac49a23-74ac-407a-b654-39cd17574ce1.jpeg" width="400" height="450"></img>
+    </div>
+    <div class="text-box1">
+      <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Headi Dynielle L. Sales from 8-Magnolia running for the position of P.I.O under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this S.Y 2024-2025. So let's be wise and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+      </p>
+    </div>
+  </div>
+  <div id="Pacleb">
+    <span onclick="back()" id="exit">&times;</span>
+    <h1 style="color: white; text-align: center;">PACLEB</h1>
+    <div class="image">
+      <img src="/images/cdaba914-0c19-453b-874d-66104d805b15.jpeg" width="400" height="450"></img>
+    </div>
+    <div class="text-box1">
+      <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Nerienel C. Pacleb from 8-Rosal running for the position of Public Information Officer (P.I.O) under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+      </p>
+    </div>
+  </div>
+  <div id="Enriquez">
+    <span onclick="back()" id="exit">&times;</span>
+    <h1 style="color: white; text-align: center;">ENRIQUEZ</h1>
+    <div class="image">
+      <img src="/images/da51ea5f-e760-41ac-bac0-b7b927a3c6ca.jpeg" width="400" height="450"></img>
+    </div>
+    <div class="text-box1">
+      <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Lourizze Mherieleynn B. Enriquez from 8-Lily running for the position of Protocol Officer (P.O) under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+      </p>
+    </div>
+  </div>
+   <div id="Bartolata">
+     <span onclick="back()" id="exit">&times;</span>
+     <h1 style="color: white; text-align: center;">BARTOLATA</h1>
+     <div class="image">
+       <img src="/images/9150cedb-e7f9-417c-8ea7-4b62ffde531d.jpeg" width="400" height="450"></img>
+     </div>
+     <div class="text-box1">
+       <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Audrey Claire O. Bartolata from 9-Yakal running for the position of Protocol Officer (P.O.) under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this S.Y. 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+       </p>
+     </div>
+   </div>
+   <div id="Augusto">
+     <span onclick="back()" id="exit">&times;</span>
+     <h1 style="color: white; text-align: center;">AUGUSTO</h1>
+     <div class="image">
+       <img src="/images/035811b6-e585-498e-8f5b-88d469cb9662.jpeg" width="400" height="450"></img>
+     </div>
+     <div class="text-box1">
+       <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community.
+   
+         Hi, I'm Sophia Marie Augusto from 8-Balete running for the position of Grade 8 Representative under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+   
+         C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+       </p>
+     </div>
+   </div>
+    <div id="Rebutiaco">
+      <span onclick="back()" id="exit">&times;</span>
+      <h1 style="color: white; text-align: center;">REBUTIACO</h1>
+      <div class="image">
+        <img src="/images/f7fdaf68-4b98-4267-879d-bea7aa07c52b.jpeg" width="400" height="450"></img>
+      </div>
+      <div class="text-box1">
+        <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm AHL VINROD REBUTIACO from 7- Mabuti running for the position of Grade-8 Representative under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+        </p>
+      </div>
+    </div>
+     <div id="Celis">
+       <span onclick="back()" id="exit">&times;</span>
+       <h1 style="color: white; text-align: center;">CELIS</h1>
+       <div class="image">
+         <img src="/images/391f86a8-9b7b-48c1-8696-0d0553078001.jpeg" width="400" height="450"></img>
+       </div>
+       <div class="text-box1">
+         <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Junielyn Joy N. Celis from 8-Rosal running for the position of Grade 9 Representative under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this S.Y 2024-2025. So let's be wise and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+         </p>
+       </div>
+     </div>
+     <div id="Ang">
+       <span onclick="back()" id="exit">&times;</span>
+       <h1 style="color: white; text-align: center;">ANG</h1>
+       <div class="image">
+         <img src="/images/0ed75fab-9cc7-402a-9077-9e545528cf6f.jpeg" width="400" height="450"></img>
+       </div>
+       <div class="text-box1">
+         <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Alexandrea Monique A. Ang from 8-Rosal running for the position of Grade 9 Representative under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this A.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+         </p>
+       </div>
+     </div>
+     <div id="Bilog">
+       <span onclick="back()" id="exit">&times;</span>
+       <h1 style="color: white; text-align: center;">BILOG</h1>
+       <div class="image">
+         <img src="/images/0467a438-4e0e-40c0-9617-4b4b299d4197.jpeg" width="400" height="450"></img>
+       </div>
+       <div class="text-box1">
+         <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community. 
+
+Hi, I'm Krisha Mae M. Bilog from 9- DAPDAP running for the position of Grade 10 Representative under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this S.Y 2024-2025. So let's be wise and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+         </p>
+       </div>
+     </div>
+    <div id="Millan">
+      <span onclick="back()" id="exit">&times;</span>
+      <h1 style="color: white; text-align: center;">MILLAN</h1>
+      <div class="image">
+        <img src="/images/70de6dce-eb8b-4bb1-b68a-6d116fcbabf6.jpeg" width="400" height="450"></img>
+      </div>
+      <div class="text-box1">
+        <p>Hey, hey what do we say? C.R.U.S.H PARTYLIST all the way! Let's shake things up and empower our community.
+      Hi, I'm James P. Millan from 9- Tanguile running for the position of Gr.10 Representative under C.R.U.S.H partylist that stands for “Capture Regrowth to Uplift Security in natures Health” that acknowledge each and every one of you to clean better and be wiser when it comes to nature.
+
+      C.R.U.S.H Partylist all the way in every way to save the earth in a healthy way to portray cleanliness in a way we know we slay, running for this S.Y 2024-2025. So let's be wais and vote C.R.U.S.H Partylist, siguradong hindi ka paasahin, lagi kapang didinggin ! CRUSH partylist na wais tiyak na pag boto mo'y walang labis (:
+      </p>
+    </div>
+      </div>
+      </div>
+    
+    <script>
+        var x = document.getElementById("image-popup");
+        var pos = document.getElementById("position");
+        var per = document.getElementById("personal");
+        var president = document.getElementById("Arroyo");
+        var vicepresident = document.getElementById("Brocal");
+        var secretary = document.getElementById("Saludo");
+        var treasurer = document.getElementById("Dalanon");
+        var auditor = document.getElementById("Reyes");
+        var publicinformationofficer1 = document.getElementById("Sales");
+        var publicinformationofficer2 = document.getElementById("Pacleb");
+        var peaceofficer1 = document.getElementById("Enriquez");
+        var peaceofficer2 = document.getElementById("Bartolata");
+        var grade8representative = document.getElementById("Augusto");
+        var grade8representative2 = document.getElementById("Rebutiaco");
+        var grade9representative1 = document.getElementById("Ang");
+        var grade9representative2 = document.getElementById("Celis");
+        var grade10representative2 = document.getElementById("Bilog");
+        var g10representative = document.getElementById("Millan");
+        var parent = document.getElementById("image-popup");
+        var main = document.getElementById("home");
+        var screen = document.getElementById('size');
+        
+        function back(){
+          x.style.display = 'none';
+          screen.style.overflow = 'scroll';
+        }
+        
+        function home(){
+           pos.style.display = 'none';
+           per.style.display = 'none';
+           main.style.display = 'block';
+        }
+        function pres(){
+          parent.style.display = 'block';
+          parent.style.overflow = 'scroll';
+          president.style.display = 'block';
+          screen.style.overflow = 'hidden';
+          vicepresident.style.display = 'none';
+          secretary.style.display = 'none';
+          g10representative.style.display = 'none';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          publicinformationofficer1.style.display = 'none';
+          publicinformationofficer2.style.display = 'none';
+          auditor.style.display = 'none';
+          peaceofficer1.style.display = 'none';
+          peaceofficer2.style.display = 'none';
+          grade8representative.style.display = 'none';
+           grade8representative2.style.display = 'none';
+           grade9representative1.style.display = 'none';
+           grade9representative2.style.display = 'none';
+           grade10representative2.style.display = 'none';
+        }
+        function vpres() {
+          parent.style.display = 'block';
+          screen.style.overflow = 'hidden';
+          vicepresident.style.display = 'block';
+          parent.style.overflow = 'scroll';
+          vicepresident.style.overflow = 'hidden';
+          president.style.display = 'none';
+          secretary.style.display = 'none';
+          g10representative.style.display = 'none';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          publicinformationofficer1.style.display = 'none';
+          publicinformationofficer2.style.display = 'none';
+           peaceofficer1.style.display = 'none';
+           peaceofficer2.style.display = 'none';
+           grade8representative.style.display = 'none';
+           grade8representative2.style.display = 'none';
+           grade9representative1.style.display = 'none';
+           grade9representative2.style.display = 'none';
+           grade10representative2.style.display = 'none';
+        }
+        
+        function sec(){
+          parent.style.display = 'block';
+          vicepresident.style.display = 'none';
+          screen.style.overflow = 'hidden';
+          president.style.display = 'none';
+          secretary.style.display = 'block';
+          parent.style.overflow = 'scroll';
+          g10representative.style.display = 'none';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          publicinformationofficer1.style.display = 'none';
+          publicinformationofficer2.style.display = 'none';
+           peaceofficer1.style.display = 'none';
+           peaceofficer2.style.display = 'none';
+           grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+        }
+        
+        function tres(){
+          parent.style.display = 'block';
+          vicepresident.style.display = 'none';
+          president.style.display = 'none';
+          secretary.style.display = 'none';
+          g10representative.style.display = 'none';
+          screen.style.overflow = 'hidden';
+          parent.style.overflow = 'scroll';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          treasurer.style.display = 'block';
+          auditor.style.display = 'none';
+          publicinformationofficer1.style.display = 'none';
+          publicinformationofficer2.style.display = 'none';
+           peaceofficer1.style.display = 'none';
+           peaceofficer2.style.display = 'none';
+           grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+        }
+        
+        function aud() {
+          screen.style.overflow = 'hidden';
+          parent.style.display = 'block';
+          vicepresident.style.display = 'none';
+          president.style.display = 'none';
+          secretary.style.display = 'none';
+          g10representative.style.display = 'none';
+          parent.style.overflow = 'scroll';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'block';
+          publicinformationofficer1.style.display = 'none';
+          publicinformationofficer2.style.display = 'none';
+           peaceofficer1.style.display = 'none';
+           peaceofficer2.style.display = 'none';
+           grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+        }
+        
+        function pio1() {
+          parent.style.display = 'block';
+          vicepresident.style.display = 'none';
+          president.style.display = 'none';
+          parent.style.overflow = 'scroll';
+          secretary.style.display = 'none';
+          g10representative.style.display = 'none';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          screen.style.overflow = 'hidden';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          publicinformationofficer1.style.display = 'block';
+          publicinformationofficer2.style.display = 'none';
+           peaceofficer1.style.display = 'none';
+           peaceofficer2.style.display = 'none';
+           grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+        }
+        
+        function pio2() {
+          parent.style.display = 'block';
+          vicepresident.style.display = 'none';
+          president.style.display = 'none';
+          parent.style.overflow = 'scroll';
+          secretary.style.display = 'none';
+          g10representative.style.display = 'none';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          publicinformationofficer1.style.display = 'none';
+          publicinformationofficer2.style.display = 'block';
+           peaceofficer1.style.display = 'none';
+           screen.style.overflow = 'hidden';
+           peaceofficer2.style.display = 'none';
+           grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+        }
+        
+        function po1() {
+          parent.style.display = 'block';
+          vicepresident.style.display = 'none';
+          president.style.display = 'none';
+          parent.style.overflow = 'scroll';
+          screen.style.overflow = 'hidden';
+          secretary.style.display = 'none';
+          g10representative.style.display = 'none';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          publicinformationofficer1.style.display = 'none';
+          publicinformationofficer2.style.display = 'none';
+          peaceofficer1.style.display = 'block';
+          peaceofficer2.style.display = 'none';
+          grade8representative.style.display = 'none';
+        }
+        
+         function po2() {
+           parent.style.display = 'block';
+           vicepresident.style.display = 'none';
+           president.style.display = 'none';
+           secretary.style.display = 'none';
+           g10representative.style.display = 'none';
+           screen.style.overflow = 'hidden';
+           parent.style.overflow = 'scroll';
+           treasurer.style.display = 'none';
+           auditor.style.display = 'none';
+           publicinformationofficer1.style.display = 'none';
+           publicinformationofficer2.style.display = 'none';
+           peaceofficer1.style.display = 'none';
+           peaceofficer2.style.display = 'block';
+           grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+         }
+         
+          function g8repre1() {
+            parent.style.display = 'block';
+            vicepresident.style.display = 'none';
+            president.style.display = 'none';
+            parent.style.overflow = 'scroll';
+            secretary.style.display = 'none';
+            g10representative.style.display = 'none';
+            treasurer.style.display = 'none';
+            auditor.style.display = 'none';
+            publicinformationofficer1.style.display = 'none';
+            publicinformationofficer2.style.display = 'none';
+            peaceofficer1.style.display = 'none';
+            peaceofficer2.style.display = 'none';
+            grade8representative.style.display = 'block';
+              grade8representative2.style.display = 'none';
+              grade9representative1.style.display = 'none';
+              grade9representative2.style.display = 'none';
+              grade10representative2.style.display = 'none';
+          }
+          
+           function g8repre2() {
+             parent.style.display = 'block';
+             vicepresident.style.display = 'none';
+             screen.style.overflow = 'hidden';
+             parent.style.overflow = 'scroll';
+             president.style.display = 'none';
+             secretary.style.display = 'none';
+             g10representative.style.display = 'none';
+             treasurer.style.display = 'none';
+             auditor.style.display = 'none';
+             publicinformationofficer1.style.display = 'none';
+             publicinformationofficer2.style.display = 'none';
+             peaceofficer1.style.display = 'none';
+             peaceofficer2.style.display = 'none';
+             grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'block';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+           }
+           
+           function g9repre1() {
+             parent.style.display = 'block';
+             vicepresident.style.display = 'none';
+             president.style.display = 'none';
+             secretary.style.display = 'none';
+             g10representative.style.display = 'none';
+             screen.style.overflow = 'hidden';
+             treasurer.style.display = 'none';
+             parent.style.overflow = 'scroll';
+             auditor.style.display = 'none';
+             publicinformationofficer1.style.display = 'none';
+             publicinformationofficer2.style.display = 'none';
+             peaceofficer1.style.display = 'none';
+             peaceofficer2.style.display = 'none';
+             grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'block';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+           }
+           
+           function g9repre1() {
+             parent.style.display = 'block';
+             vicepresident.style.display = 'none';
+             president.style.display = 'none';
+             secretary.style.display = 'none';
+             g10representative.style.display = 'none';
+             parent.style.overflow = 'scroll';
+             treasurer.style.display = 'none';
+             auditor.style.display = 'none';
+             publicinformationofficer1.style.display = 'none';
+             publicinformationofficer2.style.display = 'none';
+             peaceofficer1.style.display = 'none';
+             peaceofficer2.style.display = 'none';
+             grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'block';
+             screen.style.overflow = 'hidden';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+           }
+           
+           function g9repre2() {
+             parent.style.display = 'block';
+             vicepresident.style.display = 'none';
+             president.style.display = 'none';
+             secretary.style.display = 'none';
+             g10representative.style.display = 'none';
+             treasurer.style.display = 'none';
+             auditor.style.display = 'none';
+             publicinformationofficer1.style.display = 'none';
+             publicinformationofficer2.style.display = 'none';
+             peaceofficer1.style.display = 'none';
+             peaceofficer2.style.display = 'none';
+             screen.style.overflow = 'hidden';
+             grade8representative.style.display = 'none';
+             parent.style.overflow = 'scroll';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'block';
+             grade10representative2.style.display = 'none';
+           }
+           
+           function g10repre2() {
+             parent.style.display = 'block';
+             vicepresident.style.display = 'none';
+             president.style.display = 'none';
+             secretary.style.display = 'none';
+             g10representative.style.display = 'none';
+             treasurer.style.display = 'none';
+             auditor.style.display = 'none';
+             publicinformationofficer1.style.display = 'none';
+             screen.style.overflow = 'hidden';
+             publicinformationofficer2.style.display = 'none';
+             peaceofficer1.style.display = 'none';
+             peaceofficer2.style.display = 'none';
+             grade8representative.style.display = 'none';
+             parent.style.overflow = 'scroll';
+             grade8representative2.style.display = 'none';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'block';
+           }
+        function g10repre1(){
+          parent.style.display = 'block';
+          vicepresident.style.display = 'none';
+          president.style.display = 'none';
+          secretary.style.display = 'none';
+          g10representative.style.display = 'block';
+          treasurer.style.display = 'none';
+          auditor.style.display = 'none';
+          publicinformationofficer1.style.display = 'none';
+          publicinformationofficer2.style.display = 'none';
+           peaceofficer1.style.display = 'none';
+           peaceofficer2.style.display = 'none';
+           parent.style.overflow = 'scroll';
+           grade8representative.style.display = 'none';
+             grade8representative2.style.display = 'none';
+             screen.style.overflow = 'hidden';
+             grade9representative1.style.display = 'none';
+             grade9representative2.style.display = 'none';
+             grade10representative2.style.display = 'none';
+        }
+        
+        function ClickPos(){
+          pos.style.display = 'flex';
+          per.style.display = 'none';
+          main.style.display = 'none';
+          
+        }
+        
+        function ClickPer() {
+          pos.style.display = 'none';
+          per.style.display = 'flex';
+          main.style.display = 'none';
+        }
+    </script>
+  </body>
+</html>
